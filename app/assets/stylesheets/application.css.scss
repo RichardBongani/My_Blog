@@ -46,11 +46,15 @@
     .navbar {
         z-index: 9999;
     }
+
+    .main_footer  {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
-.creating_blog {
-    display: none;
-}
 
  .logo {
      width: 2em;
@@ -63,7 +67,7 @@
 //********Index Banner************
 .banner {
     width: 100% !important;
-    height: 80vh;
+    height: 100vh;
     background-image: url('grad.jpg');
     background-size: cover;
     background-position: center; 
@@ -166,3 +170,16 @@
     color: lightgrey;
 }
 
+// -------------Footer for the site------------------
+
+.main_footer {
+    background-color: rgb(8, 8, 20);
+    margin-top: 10em;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.my_footer ul li {
+    list-style: none;
+}
