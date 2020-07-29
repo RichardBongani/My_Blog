@@ -1,0 +1,15 @@
+<section class="container mt-5">
+<h3>Create a New Blog</h3>
+<%= form_for @post do |f| %>
+    <% if @post.errors.any? %>
+        <% @post.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger"><%= msg %></div>
+        <% end %>
+    <% end %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class:'form-control' %>
+    <%= f.label :body %>
+    <%= f.text_area :body, class:'form-control' %>
+    <%= f.submit "Save post", class:'btn btn-primary mt-3' %>
+<% end %>
+</section>

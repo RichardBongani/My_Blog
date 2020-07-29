@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+ * {
+    font-family: 'Dosis', sans-serif;
+
+// ********Navigation**********
+ }
+ .navbar-nav .nav-item .nav-link {
+     color: white;
+ }
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: lime;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+// -----------Mobile responsive----------------
+@media (max-width: 786px) {
+    .navbar-collapse {
+        background-color: rgb(231, 58, 58);
+        z-index: 9999;
+        border-radius: 10px;
+    }
+
+    .navbar {
+        z-index: 9999;
+    }
+}
+
+.creating_blog {
+    display: none;
+}
+
+ .logo {
+     width: 2em;
+     height: 2em;
+ }
+
+ .custom-btn {
+    width: 20em;
+}
+//********Index Banner************
+.banner {
+    width: 100% !important;
+    height: 80vh;
+    background-image: url('grad.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.line1 {
+    background-color: white;
+    width: 100px;
+    height: 3px;
+}
+
+.me {
+    text-align: center;
+    position: relative;
+    top: 15em;
+}
+
+
+// -------------Contact Us--------------
+
+.contact_banner {
+    width: 100% !important;
+    height: 60vh;
+    background-image: url('build.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.contact_us {
+    text-align: center;
+    position: relative;
+    top: 10em;
+}
+
+.contact_form {
+    margin-top: 5em;
+}
+
+.line2 {
+    width:  23em;
+}
+
+.line3 {
+    width: 10em;
+}
+
+
+// *********************Blog post ***********************
+
+.blog_banner {
+    width: 100% !important;
+    height: 60vh;
+    background-image: url('blog.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.reader_banner {
+    width: 100% !important;
+    height: 60vh;
+    background-image: url('read.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+#posts {
+    padding: 6.5em 0 10em 0;
+}
+
+#post h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.post_container {
+    padding: 2em 0 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.article {
+    max-width: 28%;
+}
+
+.post_title {
+    font-size:25px;
+}
+
+.post_date {
+    padding: .75rem 0;
+    color: grey;
+    font-size: 1.2em;
+        }
+
+.content {
+    color: lightgrey;
+}
+

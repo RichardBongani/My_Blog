@@ -1,0 +1,27 @@
+<section class="blog_banner">
+<div class="contact_us">
+<div class="them animate__animated animate__backInDown">
+<h1 class="text-white">Check out our Blogs</h1>
+<h5 class="text-white">Get to undertand us and what we do by reading our blogs to get the latest updates</h5>
+</div>
+</div>
+</section>
+
+<div class="text-center mt-5">
+    <h1>Our latest blogs</h1>
+    <hr class="line2">
+    <p> Welcome to our blogs, stay updated and enjoy a good reading </p>
+</div>
+
+<section class= " wraper" id="post">
+<div class=" post_container">
+<div class= "text-center article">
+<% @posts.each  do |post| %>
+    <div class = " border border-secondary ml-3 mt-3">
+        <h3 class="post_title mt-5"><%= post.title %></h3>
+        <%= link_to "Read more", post_path(post), class:'btn btn-secondary text-white mb-5' %>
+    </div>
+<% end %>
+</div>
+</div>
+</section>

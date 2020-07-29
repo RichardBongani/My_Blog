@@ -1,0 +1,8 @@
+<%= render 'pages/nametime.html.erb' %>
+<h1><%= @title %> to Services</h1>
+
+<% @services.each do |service| %>
+    <div class= "bg-primary border border-danger mb-5" >
+        <%= service %>
+    </div>
+<% end %>

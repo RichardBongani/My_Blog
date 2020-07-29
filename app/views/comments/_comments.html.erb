@@ -1,0 +1,6 @@
+<h3>Blog comments:</h3>
+<% @post.comments.each do |comment| %>
+    <div class="p-3 bg-light border border-grey mb-3">
+    <p><strong><%= comment.username %>:<br></strong><%= comment.body %><br> <%= link_to 'Delete', [comment.post, comment], class:'text-red creating_blog' ,method: :delete, data: {confirm: 'Are you sure?'} %></p>
+    </div>
+<% end %>

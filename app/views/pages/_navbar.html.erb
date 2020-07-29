@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<%= image_tag 'rocket.jpeg', class:'logo navbar-brand' %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <%= link_to 'Home', home_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'About', about_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Services', services_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Blog', posts_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+      <%= link_to 'Contact', contact_path, class:'nav-link' %>
+      </li>
+    </ul>
+  </div>
+    <ul class="navbar-nav ml-auto creating_blog">
+      <li class="nav-item">
+        <%= link_to 'Create', new_post_path, class:'btn btn-primary' %>
+      </li>
+    </ul>
+</nav>
+</body>
+</html>

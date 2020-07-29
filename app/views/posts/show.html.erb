@@ -1,0 +1,20 @@
+<section class="reader_banner">
+<div class="contact_us">
+<div class="them animate__animated animate__backInDown">
+<h1 class="text-white">Read with us</h1>
+<h5 class="text-white">“You can never get a cup of tea large enough or a book long enough to suit me.”</h5>
+</div>
+</div>
+</section>
+
+<section class="mb-5 container">
+<h1 class="text-center mt-5"><%= @post.title %></h1>
+<p><%= @post.body %></p>
+<%= link_to 'Edit', edit_post_path(@post), class:'btn btn-warning creating_blog' %>
+<%= link_to 'Delete', post_path(@post), class:'btn btn-danger creating_blog', method: :delete, data: {confirm: 'Are you sure?'} %>
+<%= link_to 'Back', posts_path, class:'btn btn-success creating_blog' %>
+
+
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>
+</section>
